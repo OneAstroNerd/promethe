@@ -14,7 +14,5 @@ def home():
 @app.route('/gate')
 def authenticator():
     id = request.args.get("id")
-    passkey = request.args.get("passkey")
 
-    if id in users.keys and passkey == users[id]:
-        return "USER FOUND"
+    return id

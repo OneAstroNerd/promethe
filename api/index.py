@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'kikh'
+    return '''
+--==WELCOME TO PROMETHEUS==--
+
+prometheus is a minimal CLI messenger
+    '''
 
 @app.route('/about')
 def about():

@@ -11,7 +11,7 @@ users = {
 def home():
     return "\nWELCOME TO PROMETHEUS\n"
 
-@app.route('/gate', metods=["POST"])
+@app.route('/gate')
 def authenticator():
     id = request.args.get("id")
     passkey = request.args.get("passkey")

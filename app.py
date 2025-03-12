@@ -1,6 +1,6 @@
-from requests import get
+from requests import get, post
 
 
-response = get("https://promethe.vercel.app/")
+response = post("https://promethe.vercel.app/")
 
 print(response.text)

@@ -6,10 +6,9 @@ app = Flask(__name__)
 def home():
     return '''
 --==WELCOME TO PROMETHEUS==--
+'''
 
-prometheus is a minimal CLI messenger
-    '''
 
-@app.route('/about')
+@app.route('/login')
 def about():
     return 'About'
